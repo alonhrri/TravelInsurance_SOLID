@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleMessages.cs" />
-    <Compile Include="InsuranceApplier\InsuranceAccount.cs" />
+    <Compile Include="InsuranceAccount.cs" />
     <Compile Include="InsuranceApplier\InsuranceApplier.cs" />
     <Compile Include="InsuranceApplier\InsuranceApplierDataCapture.cs" />
     <Compile Include="InsuranceApplier\InsuranceApplierValidator.cs" />
