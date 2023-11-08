@@ -13,6 +13,7 @@ namespace TravelInsurance_SRP
 
         }
 
+        #region Private methods
         private static void ValidateFirstName(string firstName)
         {
             if (string.IsNullOrWhiteSpace(firstName))
@@ -34,10 +35,7 @@ namespace TravelInsurance_SRP
             int age = 0;
             if (int.TryParse(ageStr, out age))
             {
-                if (age < 18 || age > 70)
-                {
-                    errorMessages.Add("Sorry, you are not eligible for insurance at the moment.");
-                }
+                ValidateEligible(age);
             }
             else
             {
@@ -45,5 +43,13 @@ namespace TravelInsurance_SRP
             }
         }
 
+        private static void ValidateEligible(int age)
+        {
+            if (age < 18 || age > 70)
+            {
+                errorMessages.Add("Sorry, you are not eligible for insurance at the moment.");
+            }
+        } 
+        #endregion
     }
 }

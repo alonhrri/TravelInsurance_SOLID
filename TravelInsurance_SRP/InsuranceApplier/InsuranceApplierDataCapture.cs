@@ -9,13 +9,13 @@ namespace TravelInsurance_SRP
             InsuranceApplier applier = new InsuranceApplier();
 
             applier.FirstName = CaptureFirstName();
-
             applier.LastName = CaptureLastName();
-
             applier.Age = CaptureAge();
 
             return applier;
         }
+
+        #region Private methods
         private static string CaptureFirstName()
         {
             Console.Write("Enter your first name: ");
@@ -32,6 +32,7 @@ namespace TravelInsurance_SRP
         {
             Console.Write("Enter your age: ");
             return Console.ReadLine();
-        }
+        } 
+        #endregion
     }
 }

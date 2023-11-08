@@ -23,9 +23,7 @@ namespace TravelInsurance_SRP
         public static void DisplayErrorMessages(List<string> list)
         {
             foreach (var msg in list)
-            {
                 Console.WriteLine(msg);
-            }
         }
     }
 }
